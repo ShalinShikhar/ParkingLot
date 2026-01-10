@@ -4,12 +4,13 @@ import Entity.ParkingSpot;
 import Entity.Vehicle;
 import pricing.CostComputation;
 
+import parkinglot.Ticket;
 import java.util.List;
 
 public class ParkingBuilding {
 
     List<ParkingLevel> levels;
-    public ParkingBuilding(List<ParkingLevel> levels, CostComputation costComputation)
+    public ParkingBuilding(List<ParkingLevel> levels)
     {
         this.levels=levels;
     }
@@ -33,7 +34,7 @@ public class ParkingBuilding {
     }
     void release(Ticket ticket)
     {
-        ticket.getlevel().unPark(ticket.getVehicle().getVehicleType(),ticket.getSpot());
+        ticket.getLevel().unPark(ticket.getVehicle().getVehicleType(),ticket.getSpot());
     }
 
 }

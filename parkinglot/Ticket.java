@@ -1,8 +1,7 @@
+package parkinglot;
 import Entity.ParkingSpot;
 import Entity.Vehicle;
-import parkinglot.ParkingLevel;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Ticket {
